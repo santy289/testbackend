@@ -1,0 +1,26 @@
+{
+  "name": "movietest",
+  "version": "1.0.0",
+  "description": "Movie test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.ts",
+    "dev": "nodemon index.ts"
+  },
+  "author": "Santiago Valencia",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-xo": "^0.43.1",
+    "eslint-config-xo-typescript": "^0.55.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1"
+  }
+}
