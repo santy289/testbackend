@@ -2,7 +2,8 @@
   "name": "movietest",
   "version": "1.0.0",
   "description": "Movie test",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "module",
   "scripts": {
     "start": "node index.ts",
     "dev": "nodemon index.ts"
