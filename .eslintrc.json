@@ -4,17 +4,8 @@
         "es2021": true,
         "node": true
     },
-    "extends": "xo",
+    "extends": "standard-with-typescript",
     "overrides": [
-        {
-            "extends": [
-                "xo-typescript"
-            ],
-            "files": [
-                "*.ts",
-                "*.tsx"
-            ]
-        }
     ],
     "parserOptions": {
         "ecmaVersion": "latest"

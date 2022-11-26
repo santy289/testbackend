@@ -1,17 +1,17 @@
-const confExpress = require('./config/express')
+import { configExpress } from './src/config/configExpress';
+import { routes } from './src/utils/routes';
 const http = require('http');
 const express = require('express');
-const route = require('./utils/routes');
 
 const app = express();
-route(app);
+routes(app);
 configExpress(app)
 
 const server = http.Server(app);
 
 const port = process.env.PORT || 8080;
 
-app.get('/', (req, res) => {
+app.get('/', (req: any, res: any) => {
   res.send("Movie API")
 })
 
