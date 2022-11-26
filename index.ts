@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { configExpress } from './src/config/configExpress';
 import { routes } from './src/utils/routes';
 const http = require('http');
