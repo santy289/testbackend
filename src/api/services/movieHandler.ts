@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+
 import {
   resSchema,
   reqShema,
@@ -15,11 +16,11 @@ export const getPopular: any = async (req: reqShema, res: resSchema) => {
       "Content-Type": "application/json"
     },
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((response: any) => response.json())
+    .then((data: any) => {
       res.json(data);
     })
-    .catch(error => {
+    .catch((error: any) => {
       console.error("Error:", error);
     });
   };
@@ -32,11 +33,11 @@ export const getPopular: any = async (req: reqShema, res: resSchema) => {
         "Content-Type": "application/json"
       },
     })
-    .then(response => response.json())
-    .then(data => {
+    .then((response: any) => response.json())
+    .then((data: any) => {
       res.json(data);
     })
-    .catch(error => {
+    .catch((error: any) => {
       console.error("Error:", error);
     });
   };
@@ -49,11 +50,11 @@ export const getPopular: any = async (req: reqShema, res: resSchema) => {
         "Content-Type": "application/json"
       },
     })
-    .then(response => response.json())
-    .then(data => {
+    .then((response: any) => response.json())
+    .then((data: any) => {
       res.json(data);
     })
-    .catch(error => {
+    .catch((error: any) => {
       console.error("Error:", error);
     });
   };
